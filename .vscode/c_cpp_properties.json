@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "ESP32-Win",
+            "name": "ESP32-Ubuntu",
             "includePath": [
                 "${workspaceRoot}",
                 "${workspaceRoot}/components",
@@ -44,6 +44,9 @@
                 "${env:IDF_PATH}/components/app_trace/include",
                 "${env:IDF_PATH}/components/app_update/include",
                 "${env:IDF_PATH}/components/xtensa-debug-module/include",
+                "${env:IDF_PATH}/components/xtensa/include",
+                "${env:IDF_PATH}/components/xtensa/esp32/include",
+                "${env:IDF_PATH}/components/esp_rom/include",
                 "${env:IDF_PATH}/components/bootloader_support/include",
                 "${env:IDF_PATH}/components/bootloader_support/include_priv",
                 "${env:IDF_PATH}/components/bt/include",
@@ -51,6 +54,7 @@
                 "${env:IDF_PATH}/components/coap/port/include/coap",
                 "${env:IDF_PATH}/components/coap/libcoap/include",
                 "${env:IDF_PATH}/components/coap/libcoap/include/coap",
+                "${env:IDF_PATH}/components/esp_common/include",
                 "${env:IDF_PATH}/components/cxx/include",
                 "${env:IDF_PATH}/components/driver/include",
                 "${env:IDF_PATH}/components/driver/include/driver",
@@ -125,7 +129,8 @@
                 "${env:IDF_PATH}/components/wpa_supplicant/include/wpa2/tls",
                 "${env:IDF_PATH}/components/wpa_supplicant/include/wpa2/utils",
                 "${env:IDF_PATH}/components/xtensa-debug-module/include",
-                "C:/Program Files/Espressif/ESP-IDF Tools/toolchain/lib/gcc/xtensa-esp32-elf/5.2.0/include"
+                "${env:HOME}/esp/xtensa-esp32-elf/include",
+                "${env:HOME}/esp/xtensa-esp32-elf/xtensa-esp32-elf/include"
             ],
             "intelliSenseMode": "clang-x64",
             "browse": {
@@ -171,6 +176,9 @@
                     "${env:IDF_PATH}/components/app_trace/include",
                     "${env:IDF_PATH}/components/app_update/include",
                     "${env:IDF_PATH}/components/xtensa-debug-module/include",
+                    "${env:IDF_PATH}/components/xtensa/include",
+                    "${env:IDF_PATH}/components/xtensa/esp32/include",
+                    "${env:IDF_PATH}/components/esp_rom/include",
                     "${env:IDF_PATH}/components/bootloader_support/include",
                     "${env:IDF_PATH}/components/bootloader_support/include_priv",
                     "${env:IDF_PATH}/components/bt/include",
@@ -178,6 +186,7 @@
                     "${env:IDF_PATH}/components/coap/port/include/coap",
                     "${env:IDF_PATH}/components/coap/libcoap/include",
                     "${env:IDF_PATH}/components/coap/libcoap/include/coap",
+                    "${env:IDF_PATH}/components/esp_common/include",
                     "${env:IDF_PATH}/components/cxx/include",
                     "${env:IDF_PATH}/components/driver/include",
                     "${env:IDF_PATH}/components/driver/include/driver",
@@ -252,8 +261,8 @@
                     "${env:IDF_PATH}/components/wpa_supplicant/include/wpa2/tls",
                     "${env:IDF_PATH}/components/wpa_supplicant/include/wpa2/utils",
                     "${env:IDF_PATH}/components/xtensa-debug-module/include",
-                    "C:/Program Files/Espressif/ESP-IDF Tools/toolchain/lib/gcc/xtensa-esp32-elf/5.2.0/include"
-                    
+                    "${env:HOME}/esp/xtensa-esp32-elf/include",
+                    "${env:HOME}/esp/xtensa-esp32-elf/xtensa-esp32-elf/include" 
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
