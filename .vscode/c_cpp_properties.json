@@ -4,9 +4,6 @@
             "name": "ESP32-Ubuntu",
             "includePath": [
                 "${workspaceRoot}",
-                "${workspaceRoot}/components",
-                "${workspaceRoot}/build",
-                "${workspaceRoot}/build/include",
                 "${env:IDF_PATH}/components/bt/bluedroid/utils/include",
                 "${env:IDF_PATH}/components/bt/bluedroid/stack/smp/include",
                 "${env:IDF_PATH}/components/bt/bluedroid/stack/sdp/include",
@@ -59,10 +56,15 @@
                 "${env:IDF_PATH}/components/driver/include",
                 "${env:IDF_PATH}/components/driver/include/driver",
                 "${env:IDF_PATH}/components/esp32/include",
+                "${env:IDF_PATH}/components/esp32/include/rom",
+                "${env:IDF_PATH}/components/esp_event/include",
+                "${env:IDF_PATH}/components/esp_wifi/include",
                 "${env:IDF_PATH}/components/ethernet/include",
+                "${env:IDF_PATH}/components/ethernet/include/eth_phy",
                 "${env:IDF_PATH}/components/expat/include/expat",
                 "${env:IDF_PATH}/components/expat/port/include",
                 "${env:IDF_PATH}/components/fatfs/src",
+                "${env:IDF_PATH}/components/freertos",
                 "${env:IDF_PATH}/components/freertos/include",
                 "${env:IDF_PATH}/components/heap/include",
                 "${env:IDF_PATH}/components/jsmn/include",
@@ -130,15 +132,13 @@
                 "${env:IDF_PATH}/components/wpa_supplicant/include/wpa2/utils",
                 "${env:IDF_PATH}/components/xtensa-debug-module/include",
                 "${env:HOME}/esp/xtensa-esp32-elf/include",
-                "${env:HOME}/esp/xtensa-esp32-elf/xtensa-esp32-elf/include"
+                "${env:HOME}/esp/xtensa-esp32-elf/xtensa-esp32-elf/include",
+                "/home/krsche/esp/esp-idf/components/spi_flash/sim/sdkconfig"
             ],
             "intelliSenseMode": "clang-x64",
             "browse": {
                 "path": [
                     "${workspaceRoot}",
-                    "${workspaceRoot}/components",
-                    "${workspaceRoot}/build",
-                    "${workspaceRoot}/build/include",
                     "${env:IDF_PATH}/components/bt/bluedroid/utils/include",
                     "${env:IDF_PATH}/components/bt/bluedroid/stack/smp/include",
                     "${env:IDF_PATH}/components/bt/bluedroid/stack/sdp/include",
@@ -191,10 +191,15 @@
                     "${env:IDF_PATH}/components/driver/include",
                     "${env:IDF_PATH}/components/driver/include/driver",
                     "${env:IDF_PATH}/components/esp32/include",
+                    "${env:IDF_PATH}/components/esp32/include/rom",
+                    "${env:IDF_PATH}/components/esp_event/include",
+                    "${env:IDF_PATH}/components/esp_wifi/include",
                     "${env:IDF_PATH}/components/ethernet/include",
+                    "${env:IDF_PATH}/components/ethernet/include/eth_phy",
                     "${env:IDF_PATH}/components/expat/include/expat",
                     "${env:IDF_PATH}/components/expat/port/include",
                     "${env:IDF_PATH}/components/fatfs/src",
+                    "${env:IDF_PATH}/components/freertos",
                     "${env:IDF_PATH}/components/freertos/include",
                     "${env:IDF_PATH}/components/heap/include",
                     "${env:IDF_PATH}/components/jsmn/include",
@@ -262,7 +267,7 @@
                     "${env:IDF_PATH}/components/wpa_supplicant/include/wpa2/utils",
                     "${env:IDF_PATH}/components/xtensa-debug-module/include",
                     "${env:HOME}/esp/xtensa-esp32-elf/include",
-                    "${env:HOME}/esp/xtensa-esp32-elf/xtensa-esp32-elf/include" 
+                    "${env:HOME}/esp/xtensa-esp32-elf/xtensa-esp32-elf/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
