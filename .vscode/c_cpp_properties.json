@@ -4,6 +4,8 @@
             "name": "ESP32-Ubuntu",
             "includePath": [
                 "${workspaceRoot}",
+                "${env:MSYS32_PATH}/opt/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include",
+                "${env:IDF_PATH}/components/asio/asio/asio/include",
                 "${env:IDF_PATH}/components/bt/bluedroid/utils/include",
                 "${env:IDF_PATH}/components/bt/bluedroid/stack/smp/include",
                 "${env:IDF_PATH}/components/bt/bluedroid/stack/sdp/include",
@@ -139,6 +141,8 @@
             "browse": {
                 "path": [
                     "${workspaceRoot}",
+                    "${env:MSYS32_PATH}/opt/xtensa-esp32-elf/lib/gcc/xtensa-esp32-elf/5.2.0/include",
+                    "${env:IDF_PATH}/components/asio/asio/asio/include",
                     "${env:IDF_PATH}/components/bt/bluedroid/utils/include",
                     "${env:IDF_PATH}/components/bt/bluedroid/stack/smp/include",
                     "${env:IDF_PATH}/components/bt/bluedroid/stack/sdp/include",
