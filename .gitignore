@@ -1,2 +1,4 @@
 .vscode/*.db*
 .vscode/ipch/*
+sdkconfig.old
+build/*
